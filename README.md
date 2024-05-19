@@ -37,12 +37,20 @@ bash <(curl -fsSL https://get.hy2.sh/) --remove
 
 ### 服务器端推荐配置
 
+使用自己签发证书，
+
 ```
+openssl req -x509 -nodes -newkey ec:<(openssl ecparam -name prime256v1) -keyout /etc/hysteria/private.key -out /etc/hysteria/cert.crt -subj "/CN=bing.com" -days 36500 && sudo chown hysteria /etc/hysteria/server.key && sudo chown hysteria /etc/hysteria/server.crt
+```
+证书存放位置：/etc/hysteria/
+
+```
+# 端口可以修改，不局限443端口
 listen: :443
 
 tls:
-  cert: 你的证书文件
-  key: 你的秘钥文件
+  cert: /etc/hysteria/cert.crt
+  key: /etc/hysteria/private.key
 
 quic:
   initStreamReceiveWindow: 8388608
@@ -62,9 +70,8 @@ disableUDP: false
 udpIdleTimeout: 60s
 
 auth:
-  type: userpass
-  userpass:
-    elden: 你的密码
+  type: password
+  password: chenshake
 
 resolver:
   type: https
@@ -78,10 +85,6 @@ acl:
   inline:
     - reject(geoip:cn)
 
-trafficStats:
-  listen: :19999
-  secret: 你的流量监测密码
- 
 masquerade:
   type: proxy
   proxy:
@@ -99,7 +102,7 @@ server: hysteria2://你的用户名:你的密码@你的域名或者IP
 
 tls:
   sni: 你的域名
-  insecure: false
+  insecure: true
 
 transport:
   type: udp
