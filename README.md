@@ -92,7 +92,7 @@ masquerade:
 
 ### 客户端建议配置
 
----
+```
 server: hysteria2://你的用户名:你的密码@你的域名或者IP
 
 tls:
@@ -131,7 +131,8 @@ http:
   username: elden
   password: 123456
 
----
+```
+
 
 
 
