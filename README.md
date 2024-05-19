@@ -33,6 +33,8 @@ bash <(curl -fsSL https://get.hy2.sh/) --remove
 
 ```
 
+[官方文档参数详细说明，提供视频，文档](https://idev.dev/proxy/hysteria2.html)
+
 ### 服务器端推荐配置
 
 ```
