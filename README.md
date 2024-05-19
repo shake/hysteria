@@ -68,7 +68,7 @@ openssl req -x509 -nodes -newkey ec:<(openssl ecparam -name prime256v1) -keyout 
 
 ```
 # 端口可以修改，不局限443端口
-listen: :443
+listen: :8843
 
 tls:
   cert: /etc/hysteria/cert.crt
