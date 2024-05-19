@@ -200,7 +200,7 @@ http:
 
 ### 客户端V2rayN
 
-V2rayN 对Hysteria2 支持不是太好。可以使用。
+V2rayN 对Hysteria2 支持不是太好。可以使用。很多参数没法设置。
 
 ![v2rayN-Hysteria2设置](https://github.com/shake/hysteria/blob/d2c140be854294fe28cdedcf3ea7956fbc7877fb/images/hy.jpg)
 
