@@ -117,6 +117,23 @@ masquerade:
   forceHTTPS: true
 ```
 
+启动服务
+
+```
+systemctl start hysteria-server.service
+```
+
+开机启动
+
+```
+systemctl enable hysteria-server.service
+```
+
+启动状态
+```
+systemctl status hysteria-server.service
+```
+
 ### 客户端建议配置
 
 ```
