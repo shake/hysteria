@@ -33,8 +33,62 @@ bash <(curl -fsSL https://get.hy2.sh/) --remove
 
 ```
 
+### 服务器端推荐配置
 
+```
+listen: :443
 
+tls:
+  cert: 你的证书文件
+  key: 你的秘钥文件
+
+quic:
+  initStreamReceiveWindow: 8388608
+  maxStreamReceiveWindow: 8388608
+  initConnReceiveWindow: 20971520
+  maxConnReceiveWindow: 20971520
+  maxIdleTimeout: 30s
+  maxIncomingStreams: 1024
+  disablePathMTUDiscovery: false
+
+bandwidth:
+  up: 0 gbps
+  down: 0 gbps
+
+ignoreClientBandwidth: false
+disableUDP: false
+udpIdleTimeout: 60s
+
+auth:
+  type: userpass
+  userpass:
+    elden: 你的密码
+
+resolver:
+  type: https
+  https:
+    addr: 1.1.1.1:443
+    timeout: 10s
+    sni: cloudflare-dns.com
+    insecure: false
+
+acl:
+  inline:
+    - reject(geoip:cn)
+
+trafficStats:
+  listen: :19999
+  secret: 你的流量监测密码
+ 
+masquerade:
+  type: proxy
+  proxy:
+    url: https://github.com/
+    rewriteHost: true
+  listenHTTP: :80
+  listenHTTPS: :443
+  forceHTTPS: true
+```
 
 ### [Get Started](https://v2.hysteria.network/)
 
