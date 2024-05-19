@@ -20,6 +20,27 @@
 ```
 bash <(curl -fsSL https://get.hy2.sh/)
 ```
+安装很简单。
+
+```
+Install /etc/hysteria/config.yaml ... ok
+Creating user hysteria ... ok
+Install /etc/systemd/system/hysteria-server.service ... ok
+Install /etc/systemd/system/hysteria-server@.service ... ok
+
+Congratulation! Hysteria 2 has been successfully installed on your server.
+
+What's next?
+
+	+ Take a look at the differences between Hysteria 2 and Hysteria 1 at https://hysteria.network/docs/misc/2-vs-1/
+	+ Check out the quick server config guide at https://hysteria.network/docs/getting-started/Server/
+	+ Edit server config file at /etc/hysteria/config.yaml
+	+ Start your hysteria server with systemctl start hysteria-server.service
+	+ Configure hysteria start on system boot with systemctl enable hysteria-server.service
+
+```
+
+
 指定版本
 
 ```
