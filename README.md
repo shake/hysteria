@@ -67,7 +67,7 @@ openssl req -x509 -nodes -newkey ec:<(openssl ecparam -name prime256v1) -keyout 
 证书存放位置：/etc/hysteria/
 
 ```
-# 端口可以修改，不局限443端口
+# 可以任意端口
 listen: :8843
 
 tls:
