@@ -62,7 +62,6 @@ bash <(curl -fsSL https://get.hy2.sh/) --remove
 
 ```
 openssl req -x509 -nodes -newkey ec:<(openssl ecparam -name prime256v1) -keyout /etc/hysteria/private.key -out /etc/hysteria/cert.crt -subj "/CN=bing.com" -days 36500 && sudo chown hysteria /etc/hysteria/private.key && sudo chown hysteria /etc/hysteria/cert.crt
-
 ```
 证书存放位置：/etc/hysteria/
 
@@ -134,6 +133,26 @@ systemctl enable hysteria-server.service
 启动状态
 ```
 systemctl status hysteria-server.service
+```
+正常状态
+
+```
+hysteria-server.service - Hysteria Server Service (config.yaml)
+     Loaded: loaded (/etc/systemd/system/hysteria-server.service; enabled; vendor preset: enabled)
+     Active: active (running) since Sun 2024-05-19 06:31:33 UTC; 17s ago
+   Main PID: 4043 (hysteria)
+      Tasks: 4 (limit: 1030)
+     Memory: 178.6M
+        CPU: 1.643s
+     CGroup: /system.slice/hysteria-server.service
+             └─4043 /usr/local/bin/hysteria server --config /etc/hysteria/config.yaml
+
+May 19 06:31:33 racknerd-3ab4502 systemd[1]: Started Hysteria Server Service (config.yaml).
+May 19 06:31:33 racknerd-3ab4502 hysteria[4043]: 2024-05-19T06:31:33Z        INFO        server mode
+May 19 06:31:33 racknerd-3ab4502 hysteria[4043]: 2024-05-19T06:31:33Z        INFO        downloading dat>
+May 19 06:31:35 racknerd-3ab4502 hysteria[4043]: 2024-05-19T06:31:35Z        INFO        server up and r>
+May 19 06:31:35 racknerd-3ab4502 hysteria[4043]: 2024-05-19T06:31:35Z        INFO        masquerade HTTP>
+May 19 06:31:35 racknerd-3ab4502 hysteria[4043]: 2024-05-19T06:31:35Z        INFO        masquerade HTTP>
 ```
 
 ### 客户端建议配置
