@@ -92,6 +92,7 @@ ignoreClientBandwidth: false
 disableUDP: false
 udpIdleTimeout: 60s
 
+# 密码记得修改
 auth:
   type: password
   password: chenshake
