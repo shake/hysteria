@@ -13,11 +13,33 @@
 
 <h2 style="text-align: center;">Hysteria is a powerful, lightning fast and censorship resistant proxy.</h2>
 
+### 安装流程
+
+安装
+
+```
+bash <(curl -fsSL https://get.hy2.sh/)
+```
+指定版本
+
+```
+bash <(curl -fsSL https://get.hy2.sh/) --version v2.4.4
+```
+
+卸载
+
+```
+bash <(curl -fsSL https://get.hy2.sh/) --remove
+
+```
+
+
+
+
 ### [Get Started](https://v2.hysteria.network/)
 
 ### [中文文档](https://v2.hysteria.network/zh/)
 
-### [Hysteria 1.x (legacy)](https://v1.hysteria.network/)
 
 ---
 
