@@ -66,6 +66,8 @@ openssl req -x509 -nodes -newkey ec:<(openssl ecparam -name prime256v1) -keyout 
 ```
 证书存放位置：/etc/hysteria/
 
+修改 /etc/hysteria/config.yaml 配置文件
+
 ```
 # 可以任意端口
 listen: :8843
