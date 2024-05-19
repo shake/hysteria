@@ -90,6 +90,51 @@ masquerade:
   forceHTTPS: true
 ```
 
+### 客户端建议配置
+
+---
+server: hysteria2://你的用户名:你的密码@你的域名或者IP
+
+tls:
+  sni: 你的域名
+  insecure: false
+
+transport:
+  type: udp
+  udp:
+    hopInterval: 30s
+
+quic:
+  initStreamReceiveWindow: 8388608
+  maxStreamReceiveWindow: 8388608
+  initConnReceiveWindow: 20971520
+  maxConnReceiveWindow: 20971520
+  maxIdleTimeout: 30s
+  keepAlivePeriod: 10s
+  disablePathMTUDiscovery: false
+
+bandwidth:
+  up: 1000 mbps
+  down: 1000 mbps
+
+fastOpen: true
+lazy: false
+
+socks5:
+  listen: 127.0.0.1:1080 
+  username: elden 
+  password: elden 
+  disableUDP: false 
+
+http:
+  listen: 127.0.0.1:1081
+  username: elden
+  password: 123456
+
+---
+
+
+
 ### [Get Started](https://v2.hysteria.network/)
 
 ### [中文文档](https://v2.hysteria.network/zh/)
