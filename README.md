@@ -20,7 +20,9 @@
 ```
 bash <(curl -fsSL https://get.hy2.sh/)
 ```
-安装很简单。
+
+<details><summary>安装输出</summary>
+
 
 ```
 Install /etc/hysteria/config.yaml ... ok
@@ -39,7 +41,7 @@ What's next?
 	+ Configure hysteria start on system boot with systemctl enable hysteria-server.service
 
 ```
-
+</details> 
 
 指定版本
 
