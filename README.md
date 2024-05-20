@@ -43,6 +43,8 @@ What's next?
 ```
 </details> 
 
+<details><summary>高级定制安装</summary>
+
 指定版本
 
 ```
@@ -55,6 +57,7 @@ bash <(curl -fsSL https://get.hy2.sh/) --version v2.4.4
 bash <(curl -fsSL https://get.hy2.sh/) --remove
 
 ```
+</details> 
 
 [官方文档参数详细说明，提供视频，文档](https://idev.dev/proxy/hysteria2.html)
 
