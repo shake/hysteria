@@ -206,6 +206,8 @@ V2rayN 对Hysteria2 支持不是太好。可以使用。很多参数没法设置
 ![v2rayN-Hysteria2设置](https://github.com/shake/hysteria/blob/d2c140be854294fe28cdedcf3ea7956fbc7877fb/images/hy.jpg)
 
 
+<details><summary>参考资料</summary>
+
 
 ### [Get Started](https://v2.hysteria.network/)
 
@@ -251,3 +253,5 @@ V2rayN 对Hysteria2 支持不是太好。可以使用。很多参数没法设置
 **If you find Hysteria useful, consider giving it a ⭐️!**
 
 [![Star History Chart](https://api.star-history.com/svg?repos=apernet/hysteria&type=Date)](https://star-history.com/#apernet/hysteria&Date)
+
+</details> 
