@@ -163,7 +163,8 @@ May 19 06:31:35 racknerd-3ab4502 hysteria[4043]: 2024-05-19T06:31:35Z        INF
 
 ### 客户端配置
 
-<details><summary>客户端 建议配置</summary>
+<details><summary>客户端建议参数</summary>
+
 ```
 server: hysteria2://你的用户名:你的密码@你的域名或者IP
 
@@ -204,7 +205,9 @@ http:
   password: 123456
 
 ```
+
 </details> 
+
 
 ### 客户端V2rayN
 
