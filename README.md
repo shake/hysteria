@@ -15,6 +15,10 @@
 
 下面内容部分来自这位博主：[官方文档参数详细说明，提供视频，文档](https://idev.dev/proxy/hysteria2.html)
 
+Hysteria 使用UDP，测试端口的时候，需要
+
+nc -zvu 服务器ip或域名 端口
+
 ### 安装流程
 
 安装
